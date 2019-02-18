@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Gra</title>
+	<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<!-- wyniki -->
+	<section class="wyniki">
+		<div class="results">
+			<div class="col">
+				<div id="myPoints">0</div>
+			</div>
+			<div class="col">
+				<p>:</p>
+			</div>
+			<div class="col">
+				<div id="compPoints">0</div>
+			</div>
+		</div>
+	</section>
+	<!--  -->
+	<section class="myChoice">
+		<div class="buttons">
+			<button id="btnRock">Kamień</button>
+			<button id="btnScisors">Nożyce</button>
+			<button id="btnPaper">Papier</button>
+		</div>
+	</section>
+	<div id="menu">
+		<p>menu</p>
+		<p>Rounds to play <span id="roundOutput"></span></p>
+	</div>
+  
+  <!-- RESULTS MODAL -->
+  <div class="modal" id="resultsModal">
+    <div class="modal__body">
+      <button id="closeModal" class="closeModalBtn">x</button>
+      <button id="resetTable" class="resetTableBtn">reset table</button>
+      <table>
+        <thead>
+          <th>Runda</th><th>Wybór gracza</th><th>Wybór komputera</th><th>Wynik</th>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>  
+	<script src="js/script.js"></script>
+</body>
+</html>
